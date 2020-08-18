@@ -1,0 +1,221 @@
+
+/*Overall Structue */
+
+body {
+  background-image:url(images/bodybg.jpg);
+  margin:0;
+  background-size: cover;
+}
+
+header, footer {
+  background-color:rgb(60, 69, 77);
+  background-image:url(images/headerbg.jpg);
+  margin: 0;
+  text-align: center;
+}
+
+header {min-height: 160px;}
+footer {height: 80px;}
+
+.wrapper {
+  max-width: 580px;
+  margin: auto;
+  padding: 0 15px; 
+}
+
+img, iframe {
+  width:100%;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+}
+
+section div ol {
+  list-style: none;
+  padding: 0 20px;
+}
+
+#portfolio a {
+  color: rgb(42, 118, 193);
+}
+
+section div ol img {
+  box-shadow: 0px 0px 10px #fff;
+}
+
+/* Header & Footer */
+
+header h1 {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-size: 52px;
+  padding-top: 30px;
+} 
+
+header nav {
+  display: flex;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px 0 0; 
+}
+
+/* header nav ul li:last-child a {
+  margin-right: 0;
+} */
+
+header p { 
+  font-family:Georgia, 'Times New Roman', Times, serif; 
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+footer p {
+  color: white; 
+  padding-top: 30px;
+}
+
+/* Type */
+
+h2, h3 {
+  color: rgb(25, 36, 36);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+p, li {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(25, 36, 36);
+  font-size: 18px;
+}
+
+a {
+  font-weight: 300;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+a {color: white}
+a:visited {color: white}
+a:active {color: darkolivegreen}
+
+/* Elements */
+
+hr {
+  border: .2px solid black;
+}
+
+
+/* Spacers */
+
+.gap-sm {
+    height: 50px;
+    width: auto;
+}
+.gap-md {
+    height: 100px;
+    width: auto;
+}
+.gap-lg {
+    height: 200px;
+    width: auto;
+}
+
+.gap-footer {
+    height: 10px;
+    width: auto;
+}
+
+/* Groups */
+
+.group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.item { 
+  flex: 1;
+  margin: 10px;
+}
+
+.contact-links {
+  list-style-type: none; 
+  padding: 0;
+}
+
+.formgroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+section h2 {
+  border-bottom: 1px solid grey; 
+}
+
+/* Contact Form Design */
+
+form {
+  padding-right: 20px;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+form textarea {
+  height: 160px;
+}
+form button {
+  width: 75px;
+}
+
+/* Desktop */
+
+@media all and (min-width: 600px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px;
+    padding-top: 10px;
+    font-size: 48px;
+  }
+
+  header nav {
+    margin-top: 100px;
+  }
+
+  a:hover {color:#56638A}
+
+  #portfolio a:hover {
+  color: white;
+  }
+}
