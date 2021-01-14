@@ -27,7 +27,7 @@
       <section class="wrapper" id="home">
        <img src="images/picofme.png" alt="Ivan's Face" style= "margin-top: 10px">
 <div class="gap-sm"></div>
-        <h2>Hi, I'm Ivan!</h2>
+        <h2>Hi, I'm Ivan</h2>
         <p>
           <ul>
             <li> I'm a audio engineer turned software developer.</li>
@@ -47,9 +47,9 @@
 
         <p> I'm eager to get my foot in the door and learn from everyone around me. Doing so in my last career taught me a lot about learning in an objective sense. I realized how achievable growth is when matched with dedication, eagerness, and open-mindedness. As a philosophy student in college, I understand the importance of the bigger picture, and being mindful of your work environment (when and when not to ask questions, be helpful, etc.). I believe, with the culmination of my past experiences, I can successfully fit right in on any team and create great work.</p>
 
-        <p> My skill sets in JavaScript, HTML, CSS, node.JS, and React, matched with my efficient troubleshooting ability and hunger to learn, will make me an asset anywhere. </p> 
+        <p> My skill sets in JavaScript, HTML, CSS, Node.js, React, and SQL, matched with my efficient troubleshooting ability and hunger to learn, will make me an asset anywhere. </p> 
 
-        <p> Outside of development, I enjoy working on/riding my motorcycle and playing guitar/listening to music!</p>
+        <p> Outside of development, I enjoy working on/riding my motorcycle and playing guitar/live music!</p>
       </section>
 
 <div class="gap-sm"></div>
@@ -62,20 +62,29 @@
         <h2>Portfolio</h2>
         <div>
           <ol>
-            <li><h3>Date Night Roulette (<a href="https://github.com/ilarocca/Date-Night-Roulette">Live Repo</a>/<a href="https://ilarocca.github.io/Date-Night-Roulette/">Live Link</a>)</h3>
-              <p>Created a web application called Date Night Roulette that allows users to randomly pick a Netflix title and a restaurant in their area for a spontaneous date night.</p>
-              <p>Skills: JavaScript, jQuery, HTML, CSS, APIs(LocationIQ, Zomato, unogs)</p>
-              <a href=""><img src="images/portfolio.webp" alt="Portfolio Link"></a>
+            <li><h3>Gliss (<a href="https://github.com/ilarocca/gliss-client" target=_blank>Repo</a>/<a href="https://gliss-client.vercel.app/" target=_blank>Live Link</a>)</h3>
+               <ul class="project-bio">
+                <li>A grocery management application that gathers recipes for you based on your pantry items. </li>
+                <li>Client-side build with React and deployed via Vercel. Server built with Node.js that connects to a PostgreSQL database that stores users, items, and recipes all deployed via Heroku. Utilizes JWT to manage authentication and and bcrypt for password hashing. </li>
+                <li>Tech:Client(React, React Router, Jest, Vercel, CSS3), Backend(Node.js, Express, REST, JWT, PostgreSQL, Knex.js, Mocha/Chai)</li>
+              </ul>
+              <a href="https://gliss-client.vercel.app/" target=_blank><img src="images/portfolio.webp" alt="Portfolio Link"></a>
             </li>
-            <li><h3>Project 2 (<a href="">Live Repo</a>/<a href="">Live Link</a>)</h3>
-              <p>Info on project</p>
-              <p>Skills: </p>
-              <a href=""><img src="images/portfolio.webp" alt="Portfolio Link"></a>
+            <li><h3>Date Night Roulette (<a href="https://github.com/ilarocca/Date-Night-Roulette" target=_blank>Repo</a>/<a href="https://ilarocca.github.io/Date-Night-Roulette/" target=_blank>Live Link</a>)</h3>
+              <ul class="project-bio">
+                <li>A web application that allows users to randomly pick a Netflix title and a restaurant in their area for a spontaneous date night. </li>
+                <li>Uses LocationiQ API to obtain users location param and returns lat/long coordinates, passes those to Zomato API and returns a random result in the area. Sends a genre type selected by the user to unogs API to get total results, second call then randomly selects start result, fetches info, then displays info to the user. </li>
+                <li>Tech: JavaScript, jQuery, HTML, CSS, APIs(LocationIQ, Zomato, unogs)</li>
+              </ul>
+              <a href="https://ilarocca.github.io/Date-Night-Roulette/" target=_blank><img src="images/portfolio.webp" alt="Portfolio Link"></a>
             </li>
-            <li><h3>Project 3 (<a href="">Live Repo</a>/<a href="">Live Link</a>)</h3>
-              <p>Info on project</p>
-              <p>Skills: </p>
-              <a href=""><img src="images/portfolio.webp" alt="Portfolio Link"></a>
+            <li><h3>Interactive Audio Quiz (<a href="https://github.com/ilarocca/Quiz-App-v2" target=_blank>Repo</a>/<a href="https://ilarocca.github.io/Quiz-App-v2/" target=_blank>Live Link</a>)</h3>
+              <ul class="project-bio">
+                <li>A web application that quizzes the user on Audio knowledge, adds their score, delivers prompt on correct and incorrect answer, and prompts a retry at the end. </li>
+                <li>Uses jQuery to traverse and manipulate the DOM via event handlers, render, and generation functions, with all info maintained inside of the store object. </li>
+                <li>Tech: JavaScript, jQuery, HTML, CSS</li>
+              </ul>
+              <a href="https://ilarocca.github.io/Quiz-App-v2/" target=_blank><img src="images/portfolio.webp" alt="Portfolio Link"></a>
             </li>
           </ol>
         </div>
@@ -102,7 +111,7 @@
 
       <section class="wrapper"> 
           <h2>Contact Form</h2>
-          <form action="https://formspree.io/ivanlarocca12@gmail.com"
+          <form action="https://formspree.io/f/mnqolybw"
     method="post">
             <div class="formgroup">
               <label for="user-name">Name:</label> 
