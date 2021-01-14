@@ -169,6 +169,10 @@ section h2 {
   border-bottom: 1px solid grey; 
 }
 
+.project-bio {
+  margin-bottom: 12px;
+}
+
 /* Contact Form Design */
 
 form {
